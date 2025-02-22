@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0014-longest-common-prefix) |
 | [0345-reverse-vowels-of-a-string](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0345-reverse-vowels-of-a-string) |
 | [0953-reverse-only-letters](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0953-reverse-only-letters) |
 | [2886-faulty-keyboard](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/2886-faulty-keyboard) |
@@ -76,4 +77,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3221-find-the-peaks](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/3221-find-the-peaks) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
