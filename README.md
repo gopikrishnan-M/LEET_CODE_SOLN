@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0013-roman-to-integer) |
+| [0217-contains-duplicate](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0217-contains-duplicate) |
 ## Math
 |  |
 | ------- |
@@ -24,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0136-single-number) |
+| [0217-contains-duplicate](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0217-contains-duplicate) |
 ## Two Pointers
 |  |
 | ------- |
@@ -41,4 +43,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0136-single-number](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0136-single-number) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
