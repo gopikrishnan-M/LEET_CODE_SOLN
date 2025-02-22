@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0013-roman-to-integer) |
 | [0345-reverse-vowels-of-a-string](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0345-reverse-vowels-of-a-string) |
 | [0953-reverse-only-letters](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0953-reverse-only-letters) |
+| [2886-faulty-keyboard](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/2886-faulty-keyboard) |
 ## Array
 |  |
 | ------- |
@@ -65,4 +66,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0268-missing-number](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0268-missing-number) |
 | [0792-binary-search](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0792-binary-search) |
+## Simulation
+|  |
+| ------- |
+| [2886-faulty-keyboard](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/2886-faulty-keyboard) |
 <!---LeetCode Topics End-->
