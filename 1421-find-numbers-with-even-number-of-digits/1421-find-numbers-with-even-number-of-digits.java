@@ -1,8 +1,8 @@
 class Solution {
     public int findNumbers(int[] nums) {
         int res=0;
-        for(int i=0;i<nums.length;i++){
-            if(isEven(nums[i])){
+        for(int num: nums){
+            if(isEven(num)){
                 res++;
             }
         }
