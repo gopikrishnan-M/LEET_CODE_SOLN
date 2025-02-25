@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0013-roman-to-integer) |
 | [0268-missing-number](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0268-missing-number) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/1421-find-numbers-with-even-number-of-digits) |
 ## String
 |  |
 | ------- |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0485-max-consecutive-ones) |
 | [0792-binary-search](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/0792-binary-search) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [3221-find-the-peaks](https://github.com/gopikrishnan-M/LEET_CODE_SOLN/tree/master/3221-find-the-peaks) |
 ## Two Pointers
 |  |
