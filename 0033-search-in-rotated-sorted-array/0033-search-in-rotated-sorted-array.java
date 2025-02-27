@@ -37,6 +37,7 @@ class Solution {
                     less than the end */
                     start=mid+1;
                 }
+                //this is handy when array with k=1
                 else{
                     end=mid;
                 }
