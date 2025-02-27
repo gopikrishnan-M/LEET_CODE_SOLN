@@ -11,7 +11,8 @@ class Solution {
                 end=mid;
             }
         }
-        return start;
+        return start;//both start and end pointing to same value
+        //so we can return start or end
         
     }
 }
