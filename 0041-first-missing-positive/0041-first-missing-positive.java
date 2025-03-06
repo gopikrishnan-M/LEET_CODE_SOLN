@@ -13,13 +13,12 @@ class Solution {
                 i++;
             }
         }
-        for (int j = 0; j <=l ; j++) {
-            if(j==l)
-                return j+1;
+        for (int j = 0; j <l ; j++) {
+            
             if(arr[j]!=j+1){
                 return j+1;
             }
         }
-        return arr.length;
+        return l+1;
     }
 }
