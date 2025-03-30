@@ -1,14 +1,9 @@
 class Solution {
-    public boolean checkIfPangram(String sentence) {
-        ArrayList<Character> alfabet=new ArrayList<>();
-        int l=sentence.length();
-        if(l<26) return false;
-        for(char c='a' ;c<='z' ;c++){
-            alfabet.add(c);
+    public boolean checkIfPangram(String s) {
+        HashSet<Character> set =new HashSet<>();
+        for (char c:s.toCharArray()) {
+            set.add(c);
         }
-        for (int i=0; i< sentence.length(); i++){
-            alfabet.remove(Character.valueOf(sentence.charAt(i)));
-        }
-        return alfabet.isEmpty();
-        }
+        return set.size()==26;
+    }
 }
