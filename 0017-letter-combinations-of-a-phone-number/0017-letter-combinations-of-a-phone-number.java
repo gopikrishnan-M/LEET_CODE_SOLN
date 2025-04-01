@@ -3,41 +3,31 @@ class Solution {
         if(digits.isEmpty()) return new ArrayList<String>();
         return helper("",digits);
     }
-    public List<String> helper(String p,String up){
-        List<String> ans=new ArrayList<>();
+    private static ArrayList<String> helper(String p, String up) {
+        ArrayList<String> ans=new ArrayList<>();
         if (up.isEmpty()) {
             ans.add(p);
             return ans;
         }
-        int s=0;
-        int e=0;
-        int digit=up.charAt(0)-'0';
-        if(digit<7) {
-            s=(digit-2)*3;
-            e=s+3;
-            for (int i= s; i < e ; i++){
-            char c= (char) ('a'+i);
-            ans.addAll(helper(p+c,up.substring(1)));
-            }
-        }
-        else{
-            if(digit==7){
-                s=15;
-                e=18;
-            }
-            else if(digit==8){
-                s=19;
-                e=21;
-            }
-            else{
-                s=22;
-                e=25;
-            }
-            for(int i=s;i<=e;i++){
-                char c= (char) ('a'+ i);
-                ans.addAll(helper(p+c,up.substring(1)));
-            }
+        HashMap<Character,String> keypad=new HashMap<>();
+        keypad= keyPadF(keypad);
+        char key = up.charAt(0);
+        String alfa=keypad.get(key);
+        for (int i = 0; i < alfa.length() ; i++) {
+            ans.addAll(helper(p+ alfa.charAt(i),up.substring(1)));
         }
         return ans;
+    }
+    public static HashMap<Character,String> keyPadF(HashMap<Character,String> keypad){
+        keypad.put('1'," ");
+        keypad.put('2',"abc");
+        keypad.put('3',"def");
+        keypad.put('4',"ghi");
+        keypad.put('5',"jkl");
+        keypad.put('6',"mno");
+        keypad.put('7',"pqrs");
+        keypad.put('8',"tuv");
+        keypad.put('9',"wxyz");
+        return keypad;
     }
 }
