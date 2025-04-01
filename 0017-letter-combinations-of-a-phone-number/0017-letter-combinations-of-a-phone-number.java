@@ -33,7 +33,7 @@ class Solution {
                 s=22;
                 e=25;
             }
-            for(int i=s;i<e;i++){
+            for(int i=s;i<=e;i++){
                 char c= (char) ('a'+ i);
                 ans.addAll(helper(p+c,up.substring(1)));
             }
