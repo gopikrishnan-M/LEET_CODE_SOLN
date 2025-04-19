@@ -46,8 +46,5 @@ class Solution {
         tail.next=(list1!=null)?list1:list2;
         return dummyHead.next;
     }
-    public ListNode middleNode(ListNode head) {
-       
-        return s;
-    }
+    
 }
