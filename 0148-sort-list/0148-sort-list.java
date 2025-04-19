@@ -13,9 +13,19 @@ class Solution {
         if(head==null||head.next==null){
             return head;
         }
-        ListNode mid= middleNode(head);
+        ListNode f=head;
+        ListNode s=head;
+        ListNode p=null;
+        while(f!=null&&f.next!=null){
+           p=s;
+           s=s.next;
+           f=f.next.next;
+        }
+        if(p!=null){
+            p.next=null;
+        }
         ListNode left=sortList(head);
-        ListNode right=sortList(mid);
+        ListNode right=sortList(s);
         return merge(left,right);
 
     }
@@ -37,17 +47,7 @@ class Solution {
         return dummyHead.next;
     }
     public ListNode middleNode(ListNode head) {
-        ListNode f=head;
-        ListNode s=head;
-        ListNode p=null;
-        while(f!=null&&f.next!=null){
-           p=s;
-           s=s.next;
-           f=f.next.next;
-        }
-        if(p!=null){
-            p.next=null;
-        }
+       
         return s;
     }
 }
