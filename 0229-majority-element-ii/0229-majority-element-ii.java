@@ -1,22 +1,19 @@
 class Solution {
     public List<Integer> majorityElement(int[] arr) {
         Arrays.sort(arr);
-        int count=0;
-        int val=arr[0];
+        int count=1;
+        int n=arr.length;
         List<Integer> ans=new ArrayList<>();
-        for(int i=0;i<arr.length;i++){
-            if(val==arr[i] ) {
+        for(int i=1;i<n;i++){
+            if( arr[i]==arr[i-1]) {
                 count++;
             }
             else{
-                if(count>arr.length/3) ans.add(val);
-                val=arr[i];
+                if(count>n/3) ans.add(arr[i-1]);
                 count=1;
             }
         }
-        if(count>arr.length/3) ans.add(val);
-
-
+        if(count>n/3) ans.add(arr[n-1]);
         return ans;
     }
 
