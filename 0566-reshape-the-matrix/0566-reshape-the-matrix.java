@@ -7,8 +7,8 @@ class Solution {
         int row=0,col=0;
         int t=0;
         for(int[] arr:mat){
-            for(int n:arr){
-                temp[t++]=n;
+            for(int num:arr){
+                temp[t++]=num;
             }
         }
         t=0;
