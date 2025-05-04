@@ -6,7 +6,7 @@ class Solution {
             if(i>=0){
                 k+=num[i--];
             }
-            ans.add(0,k%10);
+            ans.addFirst(k%10);
             k/=10;
 
         }
