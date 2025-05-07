@@ -1,9 +1,10 @@
 class Solution {
     public String restoreString(String s, int[] indices) {
-        char[] ans=new char[indices.length];
+        StringBuilder sb=new StringBuilder(s);
         for(int i=0;i<indices.length;i++){
-            ans[indices[i]]=s.charAt(i);
+            sb.deleteCharAt(indices[i]);
+            sb.insert(indices[i],s.charAt(i));
         }
-        return new String(ans);
+        return sb.toString();
     }
 }
