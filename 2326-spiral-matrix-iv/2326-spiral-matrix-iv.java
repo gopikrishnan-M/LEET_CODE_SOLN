@@ -11,8 +11,10 @@
 class Solution {
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] ans=new int[m][n];
-        for(int[] arr:ans){
-            Arrays.fill(arr, -1);
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                ans[i][j]=-1;
+            }
         }
         boundary(ans,head,0,m-1,0,n-1);
         return ans;
