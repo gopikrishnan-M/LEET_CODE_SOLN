@@ -4,7 +4,7 @@ class Solution {
         int s=0,e=30;
         while(s<=e){
             int mid=s+(e-s)/2;
-            int val=(int)Math.pow(2,mid);
+            long val=1L << mid;
             if(val==n) return true;
             else if(val<n) s=mid+1;
             else e=mid-1;
