@@ -1,5 +1,7 @@
 class Solution {
     public String addBinary(String a, String b) {
+
+        // can even solve it by converting string to int (Integer.parseInt(a,2)) then add both a and b finally convert the integer value into string (Integer.toBinaryString(ans))
         StringBuilder ans=new StringBuilder();
         int i=a.length()-1,j=b.length()-1,carry=0;
         while(i>=0 || j>=0 || carry!=0){
