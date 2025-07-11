@@ -1,8 +1,12 @@
 class Solution {
     public char findTheDifference(String s, String t) {
-        char result=0;
-        for(char c:s.toCharArray()) result^=c;
-        for(char c:t.toCharArray()) result^=c;
-        return result;
+        StringBuilder sb = new StringBuilder(t);
+        for (char c : s.toCharArray()) {
+            int index = sb.indexOf(String.valueOf(c));
+            if (index != -1) {
+                sb.deleteCharAt(index);
+            }
+        }
+        return sb.charAt(0);
     }
 }
