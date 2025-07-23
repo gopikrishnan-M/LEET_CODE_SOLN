@@ -14,21 +14,27 @@
  * }
  */
 class Solution {
+    int index=0;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if(preorder.length==0){
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for (int i = 0; i < inorder.length; i++) {
+            map.put(inorder[i],i);//mapping the value to its index \U0001f92f 
+            //the index without even thinking i.e O(1) time complexity
+        }
+        return helper(inorder,preorder,0,inorder.length-1,map);
+    }
+    public TreeNode helper(int[] inorder, int[] preorder, int left, int right, HashMap<Integer, Integer> map ){
+        if(left>right){
             return null;
         }
-        int r=preorder[0];
-        int index=0;
-        for(int i=0;i<inorder.length;i++){
-            if(r==inorder[i]){
-                index=i;
-            }
+        int current=preorder[index++];
+        TreeNode node=new TreeNode(current);
+        if(left==right){
+            return node;
         }
-        TreeNode node=new TreeNode(r);
-        node.left=buildTree(Arrays.copyOfRange(preorder,1,index+1),Arrays.copyOfRange(inorder,0,index));
-        node.right=buildTree(Arrays.copyOfRange(preorder,index+1,preorder.length),Arrays.copyOfRange(inorder,index+1,inorder.length));
-
+        int mapIndex=map.get(current);
+        node.left=helper(inorder,preorder,left,mapIndex-1,map);
+        node.right=helper(inorder,preorder,mapIndex+1,right,map);
         return node;
     }
 }
