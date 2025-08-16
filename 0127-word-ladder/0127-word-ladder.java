@@ -1,6 +1,7 @@
 class Solution {
     public int ladderLength(String begin, String end, List<String> WordList) {
-        Set<String> List=new HashSet<>(WordList);
+        Set<String> List=new HashSet<>(WordList);//we are making this set for faster lookup or traversal whatever....
+        //else this will throw time limit exeeded even tis takes longer time
         if(!List.contains(end)) return 0;
         Set<String> visited=new HashSet<>();
         Queue<String> q=new LinkedList<>();
