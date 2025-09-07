@@ -6,11 +6,11 @@ class Solution {
             if(nums[i]+nums[j]==target){
                 res[0]=i;
                 res[1]=j;
-
+                return res;
              }
         }
       
     }
-    return res;
+    return new int[1];
 
 }}
